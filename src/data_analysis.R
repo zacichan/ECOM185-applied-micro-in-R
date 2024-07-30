@@ -4,7 +4,8 @@ library(dplyr)
 library(readr)
 
 # Load the dataset
-data <- read_csv("data/processed/data.csv")
+data <- read_csv("data/processed/data.csv") %>%
+  filter(year > 2010)
 
 # Estimate the "naive" TWFE model
 res_twfe <- feols(y ~ i(time_to_treatment, ref = c(-1, -1000)) | id + year,
