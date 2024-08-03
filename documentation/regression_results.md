@@ -62,8 +62,6 @@ Given these complexities and indirect effects, it may be more practical to focus
 
 ---
 
-Feel free to make further adjustments or let me know if there are specific areas you'd like to delve into more deeply.
-
 ### References
 
 Centre for Cities, 2023. In place of centralisation: A devolution deal
