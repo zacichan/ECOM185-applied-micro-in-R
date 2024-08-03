@@ -20,13 +20,13 @@ This specification includes leads and lags to capture pre- and post-treatment dy
 
 #### Key Assumptions and Issues
 
-**1. Parallel Trends Assumption**: \
+**1. Parallel Trends Assumption**:\
 In the absence of the treatment, treated and control units would have followed parallel paths in the outcome variable. This is a fundamental requirement for causal inference in DiD models. However, as Sun and Abraham (2021) highlight, this assumption can be violated if treatment effects vary across cohorts (treatment effect heterogeneity), leading to biased estimates.
 
-**2. No Anticipation Assumption**: \
+**2. No Anticipation Assumption**:\
 Units do not alter their behaviour in anticipation of the treatment. If violated, pre-treatment periods may show significant effects, complicating the interpretation of the treatment's impact.
 
-**3. Treatment Effect Homogeneity**: \
+**3. Treatment Effect Homogeneity**:\
 The treatment effect is consistent across all treated units and periods. In reality, this assumption may not hold, leading to contamination of the estimated coefficients by other period effects.
 
 #### Addressing Heterogeneity and Contamination
