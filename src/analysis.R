@@ -14,7 +14,6 @@ library(tibble)
 library(dplyr)
 library(fixest)
 library(readr)
-library(iplots)
 
 
 # Staggered Difference-in-Difference ----
@@ -42,12 +41,16 @@ iplot(list(res_sa20), sep = 0.5,
       grid = TRUE,
       gridcol = "lightgray")  # Increase x-axis label size
 
-# Summarize the results
-summary(res_sa20, agg = "att")
+# Summarise the results
 
+## Full results
 etable(res_sa20)
 
-summary(res_sa20, agg = "cohort")
+## ATT
+etable(res_sa20, agg = "att")
+
+## ATT by Cohort
+etable(res_sa20, agg = "cohort")
 
 
 # Staggered Synthetic Difference-in-Difference ----
